@@ -6,7 +6,12 @@ public class Circulooriginal_CGG extends FiguraGeometricaoriginal_CGG {
 	
 	public Circulooriginal_CGG(double r, String tipoFigura) {
 		super(tipoFigura);
+		
+		if (r<0) {
+			radio = r*-1;
+		}else {
 		radio = r;
+		}
 	}
 
 	@Override
